@@ -14,8 +14,14 @@ struct ContentView: View {
     @State private var blue : Double = 0
     var body: some View {
         VStack {
-  
-            Text("Hello, World!")
+        Rectangle()
+            .frame(width:200, height:200)
+            .foregroundColor(Color(red: red/255, green: green/255, blue: blue/255))
+            .border(Color.black, width:2)
+            
+            SliderView(value: $red, lable: "Red")
+            SliderView(value: $green, lable: "Green")
+            SliderView(value: $blue, lable: "Blue")
         }
     }
 }
