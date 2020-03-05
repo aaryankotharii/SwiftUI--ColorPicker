@@ -9,8 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var red : Double = 0
+    @State private var green : Double = 0
+    @State private var blue : Double = 0
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+  
+            Text("Hello, World!")
+        }
     }
 }
 
